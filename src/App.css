@@ -1,38 +1,83 @@
+/* App.css */
+
+/* Apply a neutral background color to the entire app */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #f4f4f4;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style the text editor */
+#editor {
+  width: 50%;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style the preview container */
+#preview {
+  width: 50%;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+  overflow: auto;
+}
+
+/* Apply a light gray color to blockquote elements */
+#preview blockquote {
+  border-left: 3px solid #ccc;
+  padding-left: 10px;
+  color: #555;
+}
+
+/* Style headings with a subtle gray color */
+#preview h1, #preview h2 {
+  color: #444;
+}
+
+/* Style links with a neutral blue color */
+#preview a {
+  color: #007bff;
+}
+
+/* Apply a light gray background to code blocks */
+#preview pre {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+/* Style unordered list items */
+#preview ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+
+/* Style bold text */
+#preview strong {
+  font-weight: bold;
+}
+
+/* Style images with a subtle border */
+#preview img {
+  display: block;
+  max-width: 100%;
+  margin: 10px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply a subtle gray color to normal text */
+#preview p, #preview li {
+  color: #666;
 }
